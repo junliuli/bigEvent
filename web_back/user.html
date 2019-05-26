@@ -126,7 +126,7 @@
                     .prev()
                     .attr('src', url)
             })
-
+            //修改旁边的图片
             // 保存按钮的点击事件
             $('.btn-success').click(function (e) {
                 e.preventDefault()
@@ -143,6 +143,7 @@
                     success: function (backData) {
                         // console.log(backData)
                         getXinXi();
+                        getTu();
                     }
                 })
             })
